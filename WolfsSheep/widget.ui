@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Predator-pray modelling</string>
+  </property>
+  <widget class="QGroupBox" name="settings">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>10</y>
+     <width>171</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Settings</string>
+   </property>
+   <widget class="QFrame" name="preparation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sheep">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number of sheep</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="wolfs">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number of wolfs</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="wolf_nums">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sheep_nums">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rndWolf">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Randomize</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rndSheep">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>70</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Randomize</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="flow">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>151</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="step">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Step</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="speed">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pause">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="autoplay">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Autoplay</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stop">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="speedSlider">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
